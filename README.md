@@ -31,7 +31,7 @@ aws eks create-nodegroup --cluster-name <CLUSTER_NAME> --nodegroup-name <NODE_GR
 #Get KubeConfig
 aws eks update-kubeconfig --region <YOUR_REGION> --name <YOUR_CLUSTER_NAME>
 #Verify Access by running a Kubectl Command"
-kubectl get nodes
+kubectl get nodes (kubectl should be installed on the system)
 ```
 * Attaching IAM Role to the EC2 instance
 ```
