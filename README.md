@@ -41,7 +41,6 @@ aws iam create-instance-profile --instance-profile-name EKS_Access_Profile
 #2. Attach role to Instance Profile
 aws iam add-role-to-instance-profile --role-name EKS-Access-Role --instance-profile-name EKS_Access_Role
 aws ec2 associate-iam-instance-profile --region <YOUR_REGION> --instance-id <YOUR_INSTANCE_ID> --iam-instance-profile Name=EKS-Access-Role
-#
 ```
 * Configure EKS to get accessed from EC2 Machine using IAM Role
   * To edit aws-auth ConfigMap
